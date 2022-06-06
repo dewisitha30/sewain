@@ -95,8 +95,8 @@ class Onboarding extends StatelessWidget {
               },
             ),
             const Padding(padding: EdgeInsets.all(5.0)),
-            OutlineButton(
-              color: Colors.deepPurple.shade400,
+            OutlinedButton(
+              // color: Colors.deepPurple.shade400,
               child: const Text(
                 "Masuk",
                 style: TextStyle(color: Colors.deepPurple, fontSize: 18),
