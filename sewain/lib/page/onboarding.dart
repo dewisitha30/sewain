@@ -1,8 +1,10 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
-import 'package:sewain/screen/login.dart';
-import 'package:sewain/screen/register.dart';
+import 'package:sewain/page/login.dart';
+import 'package:sewain/page/product_success.dart';
+import 'package:sewain/page/register.dart';
+import 'package:sewain/page/setting.dart';
 
 class Onboarding extends StatelessWidget {
   const Onboarding({Key? key}) : super(key: key);
@@ -104,6 +106,18 @@ class Onboarding extends StatelessWidget {
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const Login()));
+              },
+            ),
+            const Padding(padding: EdgeInsets.all(5.0)),
+            OutlinedButton(
+              // color: Colors.deepPurple.shade400,
+              child: const Text(
+                "Tes",
+                style: TextStyle(color: Colors.deepPurple, fontSize: 18),
+              ),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const Setting()));
               },
             )
             // TextButton(
